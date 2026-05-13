@@ -12,8 +12,10 @@ food  = {
 total  = 0
 while True :
     try :
-        x = input("Item : ")
+        x = input("Item : ").title()
         total += food[x]
         print(f"${total:.2f}")
     except KeyError :
         pass
+    except EOFError:
+        break

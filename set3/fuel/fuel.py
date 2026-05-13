@@ -4,9 +4,9 @@
 #if the percentage is greater than 99 output F
 def main() :
     z = getper("what's x?", "what's y?")
-    if z == 0 :
+    if z <= 1 :
         print("E") 
-    elif z == 99 :
+    elif z >= 99 :
         print("F")
     else :
         print(f"{z}%")

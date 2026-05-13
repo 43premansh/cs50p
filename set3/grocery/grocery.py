@@ -1,10 +1,11 @@
 #collect all the data in a list
 items = []
 while True :
-    x = input().upper()
-    if x == 'EXIT' :
+    try :
+        x = input().upper()
+        items.append(x)
+    except EOFError :
         break
-    items.append(x)
 
 
 #start making a dictionary through those values
