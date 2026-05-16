@@ -1,8 +1,8 @@
-x = input("Input: ")
-for i in x :
-    if i.lower() not in ['a', 'e', 'i', 'o', 'u'] :
-        print(i, end = "")
-    else :
-        continue
-
-print()
+def shorten(word):
+    s = ''
+    for i in word:
+        if i.lower() not in ['a', 'e', 'i', 'o', 'u']:
+            s += i
+        else:
+            continue
+    return s
